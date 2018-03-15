@@ -19,5 +19,6 @@ public class CamControl : MonoBehaviour {
 		CharPos.y = player.transform.position.y;
 		CharPos.z = zoom;
 		transform.position = CharPos;
+		transform.rotation = player.transform.rotation;
 	}
 }
