@@ -37,12 +37,8 @@ public class Movement_Simple : MonoBehaviour {
 		rig.velocity = rigVel;
 
 		if (Input.GetKey(KeyCode.E))
-			Aim.transform.Rotate (Vector3.forward * vel);
-		if (Input.GetKey(KeyCode.Q))
 			Aim.transform.Rotate (Vector3.back * vel);
-
-		if (Input.GetKeyDown (KeyCode.Space))
-			PoolManager.Spawn (pellet, transform.position, transform.rotation);
-
+		if (Input.GetKey(KeyCode.Q))
+			Aim.transform.Rotate (Vector3.forward * vel);
 	}
 }

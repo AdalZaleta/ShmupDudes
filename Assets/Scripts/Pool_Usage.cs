@@ -7,6 +7,7 @@ namespace Uniat.Pool
 	public class Pool_Usage : MonoBehaviour {
 
 		public GameObject prefab;
+		public GameObject aim;
 
 		// Use this for initialization
 		void Start () {
@@ -17,7 +18,7 @@ namespace Uniat.Pool
 		// Update is called once per frame
 		void Update () {
 			if (Input.GetKeyDown(KeyCode.Space))
-				PoolManager.Spawn (prefab, transform.position, Quaternion.identity);
+				PoolManager.Spawn (prefab, transform.position, aim.transform.rotation);
 		}
 	}
 }
