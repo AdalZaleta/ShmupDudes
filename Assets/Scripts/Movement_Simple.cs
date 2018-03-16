@@ -8,6 +8,7 @@ public class Movement_Simple : MonoBehaviour {
 	Rigidbody2D rig;
 	public GameObject pellet;
 	public GameObject Aim;
+	public float DashSpeed;
 
 	// Use this for initialization
 	void Start () {

@@ -651,6 +651,7 @@ MonoBehaviour:
   vel: 7
   pellet: {fileID: 1860642339551922, guid: ea4b8223b5fadcd4caf0bdf47b230f0a, type: 2}
   Aim: {fileID: 751651067}
+  DashSpeed: 100
 --- !u!212 &1779003313
 SpriteRenderer:
   m_ObjectHideFlags: 0
