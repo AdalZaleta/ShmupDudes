@@ -30,6 +30,7 @@ public class Movimiento_Jugador : MonoBehaviour {
 		if (XRaxis != 0.0f || YRaxis != 0.0f) 
 		{
 			AnguloR = Mathf.Atan2 (YRaxis, XRaxis) * Mathf.Rad2Deg;
+
 		}
 		//transform.Rotate ( Vector3.up * AnguloR, Space.World);
 

@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - room
+  - Wall
+  - bullet
+  - Enemy
+  - bullet_P
+  - bullet_R
+  - bullet_M
   layers:
   - Default
   - TransparentFX
