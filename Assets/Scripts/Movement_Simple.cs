@@ -9,6 +9,7 @@ public class Movement_Simple : MonoBehaviour {
 	public GameObject pellet;
 	public GameObject Aim;
 	public float DashSpeed;
+	public Camera _cam;
 
 	// Use this for initialization
 	void Start () {
@@ -41,5 +42,7 @@ public class Movement_Simple : MonoBehaviour {
 			Aim.transform.Rotate (Vector3.back * vel);
 		if (Input.GetKey(KeyCode.Q))
 			Aim.transform.Rotate (Vector3.forward * vel);
+
+		//transform.LookAt (_cam.transform);
 	}
 }
