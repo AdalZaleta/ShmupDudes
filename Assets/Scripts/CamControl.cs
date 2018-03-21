@@ -23,7 +23,7 @@ public class CamControl : MonoBehaviour {
 	void Update () {
 		CharPos.x = player.transform.position.x + Xoffset;
 		CharPos.y = player.transform.position.y + Yoffset;
-		CharPos.z = Zoffset;
+		CharPos.z = player.transform.position.z + Zoffset;
 		transform.position = CharPos;
 	}
 }
