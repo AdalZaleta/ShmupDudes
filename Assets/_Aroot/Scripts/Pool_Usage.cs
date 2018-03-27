@@ -12,6 +12,7 @@ namespace Uniat.Pool
 		public int weapon = 1;
 		float downTime;
 		public int dmg;
+		public Light lit;
 
 		// Use this for initialization
 		void Start () {
@@ -19,6 +20,7 @@ namespace Uniat.Pool
 			{
 				PoolManager.PreSpawn (prefab, 8);
 				PoolManager.SetPoolLimit (prefab, 50);
+				lit.enabled = false;
 			}
 		}
 		
@@ -43,11 +45,12 @@ namespace Uniat.Pool
 				break;
 			}
 
-			if ((Input.GetAxis ("RightStick H") != 0) || (Input.GetAxis ("RightStick V") != 0)) 
+			if ((Input.GetAxis ("RightStick H") != 0) || (Input.GetAxis ("RightStick V") != 0) || (Input.GetKeyDown(KeyCode.Space))) 
 			{
 				if (canshoot) 
 				{
 					PoolManager.Spawn (prefab, aim.transform.position, aim.transform.rotation);
+					StartCoroutine (Spark ());
 					StartCoroutine (Cooldown (downTime));
 				}
 			}
@@ -73,6 +76,13 @@ namespace Uniat.Pool
 			canshoot = false;
 			yield return new WaitForSeconds (downtime);
 			canshoot = true;
+		}
+
+		IEnumerator Spark()
+		{
+			lit.enabled = true;
+			yield return new WaitForSeconds (0.02f);
+			lit.enabled = false;
 		}
 
 	}
