@@ -42,5 +42,10 @@ namespace ShmupDudes
 		{
 			myChild.rotation = Quaternion.Euler (_rotation);
 		}
+
+		public void Dash(Vector3 _position)
+		{
+			
+		}
 	}
 }
