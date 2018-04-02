@@ -22,7 +22,7 @@ namespace ShmupDudes
 	{
 		public static Manager_Input inputManager;
 		public static Manager_App appManager;
-		public static Manager_Character characterManager;
+		public static Instance_Character characterInstance;
 		public static Manager_Controller controllerManager;
 	}
 }

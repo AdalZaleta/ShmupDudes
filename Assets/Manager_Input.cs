@@ -33,6 +33,11 @@ namespace ShmupDudes
 			//TODO agregar mas controles
 			return T_pos;
 		}
+
+		public Vector3 GetRotation(ControllerSide _side)
+		{
+			return R_pos;
+		}
 			
 	}
 }

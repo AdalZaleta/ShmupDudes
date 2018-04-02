@@ -9,7 +9,7 @@ namespace ShmupDudes
 	public class Manager_Controller : MonoBehaviour 
 	{
 		//el character a controlar
-		public Manager_Character myCharacter;
+		public Instance_Character myCharacter;
 
 		//TODO si se quiere hacer multiplayer local, puedes agregar aqui, que Joystick va a utilizar
 		public ControllerSide controllerSide;
@@ -22,7 +22,8 @@ namespace ShmupDudes
 		
 		void Update () 
 		{
-			myCharacter.Movement (Manager_Static.inputManager.GetDirection(controllerSide));
+			myCharacter.MovementRigi (Manager_Static.inputManager.GetDirection(controllerSide));
+			myCharacter.RotationChild (Manager_Static.inputManager.GetRotation (controllerSide));
 
 		}
 	}
