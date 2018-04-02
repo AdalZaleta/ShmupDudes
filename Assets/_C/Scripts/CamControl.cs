@@ -21,9 +21,12 @@ public class CamControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		CharPos.x = player.transform.position.x + Xoffset;
-		CharPos.y = player.transform.position.y + Yoffset;
-		CharPos.z = player.transform.position.z + Zoffset;
-		transform.position = CharPos;
+		if (player)
+		{
+			CharPos.x = player.transform.position.x + Xoffset;
+			CharPos.y = player.transform.position.y + Yoffset;
+			CharPos.z = player.transform.position.z + Zoffset;
+			transform.position = CharPos;
+		}
 	}
 }

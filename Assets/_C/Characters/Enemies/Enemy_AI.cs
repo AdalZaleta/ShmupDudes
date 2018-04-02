@@ -7,8 +7,10 @@ public class Enemy_AI : MonoBehaviour {
 
 	GameObject Player;
 	NavMeshAgent agent;
+	GameObject Slime;
 	public int HP;
 	public int dmg;
+	float enemy_offset;
 
 	void OnTriggerEnter (Collider _col)
 	{
@@ -22,13 +24,28 @@ public class Enemy_AI : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Player = GameObject.FindGameObjectWithTag ("Player");
+		Slime = GameObject.Find ("Slime");
 		agent = GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		transform.rotation = Quaternion.identity;
-		agent.destination = Player.transform.position; 
+
+		if (Player)
+		{
+			agent.destination = Player.transform.position; 
+			enemy_offset = Player.transform.position.x - transform.position.x;
+		}else
+		{
+			agent.destination = transform.position;
+			enemy_offset = 0;
+		}
+
+		if (enemy_offset <= 0)
+			Slime.GetComponent<SpriteRenderer> ().flipX = false;
+		else
+			Slime.GetComponent<SpriteRenderer> ().flipX = true;
 
 		if (HP <= 0)
 			Destroy (gameObject);
