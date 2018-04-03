@@ -11,11 +11,13 @@ public class Enemy_AI : MonoBehaviour {
 	public int HP;
 	public int dmg;
 	float enemy_offset;
+	public Animator anim;	
 
 	void OnTriggerEnter (Collider _col)
 	{
 		if (_col.gameObject.CompareTag ("bullet"))
 		{
+			anim.SetTrigger ("Hit");
 			dmg = Player.gameObject.GetComponent<Uniat.Pool.Pool_Usage> ().dmg;
 			StartCoroutine (Blink (dmg));
 		}
@@ -47,15 +49,27 @@ public class Enemy_AI : MonoBehaviour {
 		else
 			Slime.GetComponent<SpriteRenderer> ().flipX = true;
 
+		if ((enemy_offset > -0.6f) && (enemy_offset < 0.6f))
+		{
+			anim.SetTrigger ("Attack");
+		}else
+		{
+			anim.SetTrigger ("Walk");
+		}
+			
 		if (HP <= 0)
-			Destroy (gameObject);
+		{
+			anim.SetTrigger ("Dead");
+			Destroy (gameObject, 1.2f);
+		}
+			
 	}
 
 	IEnumerator Blink(int damage)
 	{
 		HP -= damage;
-		gameObject.GetComponent<SpriteRenderer> ().color = Color.red;
+		Slime.GetComponent<SpriteRenderer> ().color = Color.red;
 		yield return new WaitForSeconds (0.02f);
-		gameObject.GetComponent<SpriteRenderer> ().color = Color.white;
+		Slime.GetComponent<SpriteRenderer> ().color = Color.white;
 	}
 }
