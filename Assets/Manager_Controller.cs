@@ -24,7 +24,6 @@ namespace ShmupDudes
 		{
 			myCharacter.MovementRigi (Manager_Static.inputManager.GetDirection(controllerSide));
 			myCharacter.RotationChild (Manager_Static.inputManager.GetRotation (controllerSide));
-
 		}
 	}
 }
