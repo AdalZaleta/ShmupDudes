@@ -49,7 +49,7 @@ namespace Uniat.Pool
 			{
 				if (canshoot) 
 				{
-					PoolManager.Spawn (prefab, aim.transform.position, aim.transform.rotation);
+					PoolManager.Spawn (prefab, aim.transform.position, Quaternion.identity);
 					StartCoroutine (Spark ());
 					StartCoroutine (Cooldown (downTime));
 				}

@@ -24,7 +24,7 @@ public class Character_Stats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		_char = GameObject.Find ("Character");
+		_char = GameObject.Find ("pfb_Character");
 	}
 	
 	// Update is called once per frame

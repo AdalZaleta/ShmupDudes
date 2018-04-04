@@ -10,8 +10,9 @@ public class Enemy_AI : MonoBehaviour {
 	GameObject Slime;
 	public int HP;
 	public int dmg;
-	float enemy_offset;
-	public Animator anim;	
+	public float enemy_offset;
+	public Animator anim;
+	bool located = false;
 
 	void OnTriggerEnter (Collider _col)
 	{
@@ -33,15 +34,20 @@ public class Enemy_AI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.rotation = Quaternion.identity;
+		enemy_offset = Player.transform.position.x - transform.position.x;
 
-		if (Player)
+		if ((enemy_offset < 5) && (enemy_offset > -5))
+			if (!located)
+				located = true;
+
+		if (Player && located)
 		{
 			agent.destination = Player.transform.position; 
-			enemy_offset = Player.transform.position.x - transform.position.x;
+			anim.SetTrigger ("Walk");
 		}else
 		{
 			agent.destination = transform.position;
-			enemy_offset = 0;
+			anim.SetTrigger ("Idle");
 		}
 
 		if (enemy_offset <= 0)
@@ -52,15 +58,13 @@ public class Enemy_AI : MonoBehaviour {
 		if ((enemy_offset > -0.6f) && (enemy_offset < 0.6f))
 		{
 			anim.SetTrigger ("Attack");
-		}else
-		{
-			anim.SetTrigger ("Walk");
 		}
-			
+
 		if (HP <= 0)
 		{
+			agent.destination = transform.position;
 			anim.SetTrigger ("Dead");
-			Destroy (gameObject, 1.2f);
+			Destroy (gameObject, 0.7f);
 		}
 			
 	}

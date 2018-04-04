@@ -21,7 +21,7 @@ public class Pool_Prefab : MonoBehaviour {
 	void OnSpawn()
 	{
 		rig = GetComponent<Rigidbody> ();
-		rig.AddRelativeForce (Vector3.up * speed);
+		rig.AddRelativeForce (Vector3.right * speed);
 		Invoke ("Suicide", 2);
 	}
 
