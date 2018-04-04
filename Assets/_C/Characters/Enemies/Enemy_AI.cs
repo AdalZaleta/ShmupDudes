@@ -16,8 +16,11 @@ public class Enemy_AI : MonoBehaviour {
 
 	void OnTriggerEnter (Collider _col)
 	{
-		if (_col.gameObject.CompareTag ("bullet"))
+		if ((_col.gameObject.CompareTag ("bullet")) && HP > 0 )
 		{
+			if (!located)
+				located = true;
+			
 			anim.SetTrigger ("Hit");
 			dmg = Player.gameObject.GetComponent<Uniat.Pool.Pool_Usage> ().dmg;
 			StartCoroutine (Blink (dmg));
@@ -34,7 +37,8 @@ public class Enemy_AI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.rotation = Quaternion.identity;
-		enemy_offset = Player.transform.position.x - transform.position.x;
+		if (Player)
+			enemy_offset = Player.transform.position.x - transform.position.x;
 
 		if ((enemy_offset < 5) && (enemy_offset > -5))
 			if (!located)
@@ -72,8 +76,8 @@ public class Enemy_AI : MonoBehaviour {
 	IEnumerator Blink(int damage)
 	{
 		HP -= damage;
-		Slime.GetComponent<SpriteRenderer> ().color = Color.red;
-		yield return new WaitForSeconds (0.02f);
-		Slime.GetComponent<SpriteRenderer> ().color = Color.white;
+		Slime.GetComponent<SpriteRenderer> ().material.color = Color.red;
+		yield return new WaitForSeconds (0.1f);
+		Slime.GetComponent<SpriteRenderer> ().material.color = Color.white;
 	}
 }

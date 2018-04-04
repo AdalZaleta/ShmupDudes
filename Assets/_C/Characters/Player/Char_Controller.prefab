@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72bf7a638b451a4988799f2a66c00b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1749633380596880, guid: a2c9ab67765d4de40b6debd0b9c73651, type: 2}
+  prefab: {fileID: 1677691024282114, guid: a2c9ab67765d4de40b6debd0b9c73651, type: 2}
   aim: {fileID: 1880415602759284}
   weapon: 0
   dmg: 0

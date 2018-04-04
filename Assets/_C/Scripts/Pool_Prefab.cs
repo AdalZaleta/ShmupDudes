@@ -8,6 +8,7 @@ public class Pool_Prefab : MonoBehaviour {
 
 	public float speed;
 	Rigidbody rig;
+	public GameObject spr;
 	public ParticleSystem hit;
 
 	void OnTriggerEnter (Collider _col)
@@ -21,18 +22,18 @@ public class Pool_Prefab : MonoBehaviour {
 	void OnSpawn()
 	{
 		rig = GetComponent<Rigidbody> ();
-		rig.AddRelativeForce (Vector3.right * speed);
+		rig.AddRelativeForce (Vector3.up * speed);
 		Invoke ("Suicide", 2);
 	}
 
 	IEnumerator Suicide()
 	{
 		hit.Play ();
-		GetComponent<SpriteRenderer> ().enabled = false;
+		spr.gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 		rig.velocity = Vector3.zero;
 		rig.rotation = Quaternion.identity;
 		yield return new WaitForSeconds (0.2f);
-		GetComponent<SpriteRenderer> ().enabled = true;
+		spr.gameObject.GetComponent<SpriteRenderer> ().enabled = true;
 		PoolManager.Despawn (gameObject);
 	}
 }
