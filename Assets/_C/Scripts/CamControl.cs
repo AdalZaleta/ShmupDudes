@@ -17,6 +17,7 @@ public class CamControl : MonoBehaviour {
 		Xoffset = transform.position.x;
 		Yoffset = transform.position.y;
 		Zoffset = transform.position.z;
+
 	}
 	
 	// Update is called once per frame
