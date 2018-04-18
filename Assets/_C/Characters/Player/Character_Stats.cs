@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Character_Stats : MonoBehaviour {
 
-	public float HP;
+	[Range(0, 14)]
+	public int HP;
 	bool inviscooldown;
 	public float cdtime;
 	GameObject _char;

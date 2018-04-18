@@ -7,11 +7,14 @@ using UnityEditor.SceneManagement;
 public class YouDied : MonoBehaviour {
 
 	GameObject player;
+	public Sprite[] hpList;
+	public Image HPbar;
 	public Image ded;
 	public Text txtA;
 	public Text txtB;
 	bool isded = false;
 	float alpha = 0;
+	int hpspriteindex;
 
 	// Use this for initialization
 	void Start () {
@@ -23,13 +26,22 @@ public class YouDied : MonoBehaviour {
 		if (!player)
 			if (!isded)
 			{
+				HPbar.sprite = hpList [14];
 				StartCoroutine (death (0));
 				isded = true;
 			}
+
+		if (player)
+		{
+			hpspriteindex = player.GetComponent<Character_Stats> ().HP;
+			HPbar.sprite = hpList[hpspriteindex];
+		}
+
 		if (isded && Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
 		{
 			EditorSceneManager.LoadScene (EditorSceneManager.GetActiveScene().name);
 		}
+
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			EditorSceneManager.LoadScene ("UI_MainMenu");

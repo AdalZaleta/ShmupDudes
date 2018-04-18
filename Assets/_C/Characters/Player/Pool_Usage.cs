@@ -71,6 +71,11 @@ namespace Uniat.Pool
 			}
 		}
 
+		void OnDestroy()
+		{
+			PoolManager.ClearPools ();
+		}
+
 		IEnumerator Cooldown(float downtime)
 		{
 			canshoot = false;

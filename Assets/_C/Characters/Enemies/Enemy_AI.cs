@@ -54,10 +54,13 @@ public class Enemy_AI : MonoBehaviour {
 			anim.SetTrigger ("Idle");
 		}
 
-		if (enemy_offset <= 0)
-			Slime.GetComponent<SpriteRenderer> ().flipX = false;
-		else
-			Slime.GetComponent<SpriteRenderer> ().flipX = true;
+		if (Slime)
+		{
+			if (enemy_offset <= 0)
+				Slime.GetComponent<SpriteRenderer> ().flipX = false;
+			else
+				Slime.GetComponent<SpriteRenderer> ().flipX = true;
+		}
 
 		if ((enemy_offset > -0.6f) && (enemy_offset < 0.6f))
 		{
@@ -75,9 +78,12 @@ public class Enemy_AI : MonoBehaviour {
 
 	IEnumerator Blink(int damage)
 	{
-		HP -= damage;
-		Slime.GetComponent<SpriteRenderer> ().material.color = Color.red;
-		yield return new WaitForSeconds (0.1f);
-		Slime.GetComponent<SpriteRenderer> ().material.color = Color.white;
+		if (Slime)
+		{
+			HP -= damage;
+			Slime.GetComponent<SpriteRenderer> ().material.color = Color.red;
+			yield return new WaitForSeconds (0.1f);
+			Slime.GetComponent<SpriteRenderer> ().material.color = Color.white;
+		}
 	}
 }
