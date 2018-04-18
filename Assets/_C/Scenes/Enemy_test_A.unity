@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_IndirectSpecularColor: {r: 0.017579064, g: 0.017893, b: 0.023260612, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+>>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -411,6 +415,163 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoom: 6
+<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
+=======
+--- !u!1 &539118138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 539118140}
+  - component: {fileID: 539118139}
+  m_Layer: 0
+  m_Name: Point light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &539118139
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539118138}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0, g: 1, b: 0.13103461, a: 1}
+  m_Intensity: 2
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &539118140
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539118138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: 1.5, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &670811629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 670811634}
+  - component: {fileID: 670811633}
+  - component: {fileID: 670811632}
+  - component: {fileID: 670811631}
+  - component: {fileID: 670811630}
+  m_Layer: 0
+  m_Name: Char_Controller
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &670811630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 670811629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d4cb2034added4cbfa4d1b915072c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsCharacter: {fileID: 11400000, guid: 7ee6ab3fd70d6764ab2517a0ac833fbf, type: 2}
+  currentHP: 0
+  invensible: 0
+--- !u!114 &670811631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 670811629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72bf7a638b451a4988799f2a66c00b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1080126118150040, guid: 204e1e4f694a99e4580198c7b2145c26, type: 2}
+  aim: {fileID: 1487489714}
+  weapon: 0
+  dmg: 0
+--- !u!65 &670811632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 670811629}
+  m_Material: {fileID: 13400000, guid: 72442beaaaeea7c4aa7f690716041117, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 1.2, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &670811633
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 670811629}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 2
+--- !u!4 &670811634
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 670811629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1067698682}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 --- !u!1001 &680495479
 Prefab:
   m_ObjectHideFlags: 0
@@ -489,6 +650,7 @@ Prefab:
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
@@ -545,6 +707,52 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 447cb05ef448692438f696f7fb5f4016, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1060748880 stripped
+=======
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &1067698675 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1210610213102720, guid: 248d37cd511a63044b4b49a7b7edc7bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 356092034}
+--- !u!114 &1067698677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067698675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a799a41d17f9de04591d0a7adb7de468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1067698679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067698675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853bfc8dfaee6ce43b11f64df76d8223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsCharacter: {fileID: 11400000, guid: 7ee6ab3fd70d6764ab2517a0ac833fbf, type: 2}
+  myChild: {fileID: 1865549512}
+  myFather: {fileID: 0}
+--- !u!4 &1067698682 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4214600752590670, guid: 248d37cd511a63044b4b49a7b7edc7bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 356092034}
+--- !u!1 &1117090205
+>>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 33e877cd3b02b4e458b606d6d4758776, type: 3}
   m_PrefabInternal: {fileID: 680495479}
@@ -553,7 +761,68 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_GameObject: {fileID: 1060748880}
+=======
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1117090211}
+  - component: {fileID: 1117090210}
+  - component: {fileID: 1117090209}
+  - component: {fileID: 1117090208}
+  - component: {fileID: 1117090207}
+  - component: {fileID: 1117090206}
+  - component: {fileID: 1117090212}
+  - component: {fileID: 1117090213}
+  - component: {fileID: 1117090214}
+  m_Layer: 0
+  m_Name: slime_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1117090206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117090205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904435e8d0e0420439f02bfa210784ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
+  dmg: 0
+--- !u!195 &1117090207
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117090205}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.8
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0.2
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2.5
+  m_BaseOffset: 2.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!65 &1117090208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117090205}
+>>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -623,6 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
@@ -651,6 +921,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1105840721}
+=======
+--- !u!114 &1117090214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117090205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853bfc8dfaee6ce43b11f64df76d8223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsCharacter: {fileID: 11400000, guid: e309c484adbaa4f48a9c3fdae919225f, type: 2}
+  myChild: {fileID: 0}
+  myFather: {fileID: 0}
+>>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 --- !u!1 &1135698599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,16 +1416,63 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2092343396
+=======
+--- !u!1 &1867681940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1867681945}
+  - component: {fileID: 1867681944}
+  - component: {fileID: 1867681943}
+  - component: {fileID: 1867681942}
+  - component: {fileID: 1867681941}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 1654036009018553494, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1867681941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867681940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3988b491412fb744d862ddf3aeed0876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 1
+--- !u!114 &1867681942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867681940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8379a5587916bc4bb6b0c07a1d5bad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1867681943
+>>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_GameObject: {fileID: 2092343391}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1166,3 +1499,39 @@ MonoBehaviour:
   ded: {fileID: 348156675}
   txtA: {fileID: 1105840723}
   txtB: {fileID: 1862557580}
+=======
+  m_GameObject: {fileID: 1867681940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869950d337b3aa144963fed75d8150d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCharacter: {fileID: 1067698679}
+  controllerSide: 0
+--- !u!114 &1867681944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867681940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d115f3b8e2a2854e978f279fb204676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  T_pos: {x: 0, y: 0}
+  R_pos: {x: 0, y: 0, z: 0}
+--- !u!4 &1867681945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867681940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
