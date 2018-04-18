@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 65287705889658738}
   - component: {fileID: 195835408524531710}
   - component: {fileID: 114034862315704796}
+  - component: {fileID: 114013927006259642}
+  - component: {fileID: 114660715132828838}
   m_Layer: 0
   m_Name: Enemy_Controller
   m_TagString: Enemy
@@ -55,8 +57,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1671749954163366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.949, y: 1.7, z: -0.571}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 3.48, y: 1, z: -3.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4508837050137398}
   m_Father: {fileID: 0}
@@ -119,6 +121,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114013927006259642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1671749954163366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d4cb2034added4cbfa4d1b915072c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsCharacter: {fileID: 11400000, guid: e309c484adbaa4f48a9c3fdae919225f, type: 2}
+  currentHP: 0
+  invensible: 0
 --- !u!114 &114034862315704796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,10 +146,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904435e8d0e0420439f02bfa210784ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 1
+  HP: 5
   dmg: 0
   enemy_offset: 0
   anim: {fileID: 95025511231887138}
+--- !u!114 &114660715132828838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1671749954163366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d4cb2034added4cbfa4d1b915072c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsCharacter: {fileID: 11400000, guid: e309c484adbaa4f48a9c3fdae919225f, type: 2}
+  currentHP: 0
+  invensible: 0
 --- !u!114 &114898734901657540
 MonoBehaviour:
   m_ObjectHideFlags: 1
