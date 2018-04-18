@@ -38,11 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_IndirectSpecularColor: {r: 0.017579064, g: 0.017893, b: 0.023260612, a: 1}
-=======
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
->>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -415,8 +411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoom: 6
-<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
-=======
 --- !u!1 &539118138
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +565,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 --- !u!1001 &680495479
 Prefab:
   m_ObjectHideFlags: 0
@@ -650,7 +643,6 @@ Prefab:
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
@@ -707,7 +699,6 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 447cb05ef448692438f696f7fb5f4016, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1060748880 stripped
-=======
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -752,7 +743,6 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 356092034}
 --- !u!1 &1117090205
->>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 33e877cd3b02b4e458b606d6d4758776, type: 3}
   m_PrefabInternal: {fileID: 680495479}
@@ -761,9 +751,7 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_GameObject: {fileID: 1060748880}
-=======
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1117090211}
@@ -822,7 +810,6 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1117090205}
->>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -892,7 +879,6 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
@@ -921,7 +907,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1105840721}
-=======
 --- !u!114 &1117090214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,7 +921,6 @@ MonoBehaviour:
   statsCharacter: {fileID: 11400000, guid: e309c484adbaa4f48a9c3fdae919225f, type: 2}
   myChild: {fileID: 0}
   myFather: {fileID: 0}
->>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 --- !u!1 &1135698599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,15 +1400,12 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2092343396
-=======
---- !u!1 &1867681940
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1467,12 +1448,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1867681943
->>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/_C/Scenes/Enemy_test_A.unity
   m_GameObject: {fileID: 2092343391}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1499,7 +1478,6 @@ MonoBehaviour:
   ded: {fileID: 348156675}
   txtA: {fileID: 1105840723}
   txtB: {fileID: 1862557580}
-=======
   m_GameObject: {fileID: 1867681940}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1534,4 +1512,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Limpieza_de_Codigo:Assets/Scenes/Enemy_test_A.unity
