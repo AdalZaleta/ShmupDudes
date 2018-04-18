@@ -21,7 +21,7 @@ namespace ShmupDudes
 			if (_col.gameObject.CompareTag ("Enemy")) {
 				if (!invensible) {
 					//Debug.Log ("El enemigo me sigue tocando :3");
-					StartCoroutine (TakeDamageCourrutine (statsCharacter.invensiblecd, _col.gameObject.GetComponent<Instance_Character>().statsCharacter.Damage));
+					StartCoroutine (TakeDamageCourrutine (statsCharacter.invensiblecd, _col.gameObject.GetComponent<Character_Stats>().statsCharacter.Damage));
 				}
 			}
 		}
