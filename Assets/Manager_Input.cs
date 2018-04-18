@@ -17,6 +17,16 @@ namespace ShmupDudes
 
 		void Update()
 		{
+
+			//CODIGO PARA DEBUGAR LOS ESTADOS DEL JUEGO
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				Manager_Static.appManager.currentState = AppState.gameplay;
+			}
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				Manager_Static.appManager.currentState = AppState.main_menu;
+			}
+
+			//CODIGO DE LOS INPUTS DEPENDIENDO DEL ESTADO DEL JUEGO
 			if (Manager_Static.appManager.currentState == AppState.gameplay) 
 			{
 				T_pos.Set (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
@@ -24,6 +34,14 @@ namespace ShmupDudes
 				{
 					R_pos.Set (0, Mathf.Atan2 (Input.GetAxis ("RightStick V"), Input.GetAxis ("RightStick H")) * Mathf.Rad2Deg, 0);
 
+				}
+			}
+			if (Manager_Static.appManager.currentState == AppState.main_menu) {
+				if (Input.GetAxis ("Vertical") > 0.5) {
+					Debug.Log ("Le estas dando para arriba");
+				}
+				if (Input.GetAxis ("Vertical") < -0.5) {
+					Debug.Log ("Le estas dando para arriba");
 				}
 			}
 		}
