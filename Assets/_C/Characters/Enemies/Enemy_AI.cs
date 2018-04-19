@@ -34,6 +34,7 @@ namespace ShmupDudes
 			Player = GameObject.FindGameObjectWithTag ("Player");
 			agent = GetComponent<NavMeshAgent>();
 			HP = gameObject.GetComponent<Character_Stats>().currentHP;
+			agent.speed = gameObject.GetComponent<Character_Stats>().currentSpeed;
 		}
 		
 		// Update is called once per frame

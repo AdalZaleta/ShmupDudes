@@ -7,13 +7,16 @@ namespace ShmupDudes
 	public class Character_Stats : MonoBehaviour {
 
 		public Stats_Characters statsCharacter;
+		public Animator anim;
 
 		public int currentHP;
+		public float currentSpeed;
 		public bool invensible;
 
 		void Awake()
 		{
 			currentHP = statsCharacter.HP;
+			currentSpeed = statsCharacter.speed;
 		}
 
 		void OnCollisionStay (Collision _col)
@@ -29,6 +32,7 @@ namespace ShmupDudes
 		void TakeDamage(int _damage)
 		{
 			currentHP -= _damage;
+			anim.SetTrigger ("Damage");
 			if (currentHP <= 0) {
 				Destroy (gameObject);
 			}
