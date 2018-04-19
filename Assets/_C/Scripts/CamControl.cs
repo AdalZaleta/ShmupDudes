@@ -13,7 +13,7 @@ public class CamControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.Find ("Character_A");
+		player = GameObject.FindGameObjectWithTag ("Aim");
 		Xoffset = transform.position.x;
 		Yoffset = transform.position.y;
 		Zoffset = transform.position.z;

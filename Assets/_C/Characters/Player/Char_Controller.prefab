@@ -106,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1062936377323714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4841332, y: 1.039, z: 0.4641113}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4286158205352294}
@@ -406,7 +406,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsCharacter: {fileID: 11400000, guid: 7ee6ab3fd70d6764ab2517a0ac833fbf, type: 2}
+  anim: {fileID: 95336271836263668}
   currentHP: 0
+  currentSpeed: 0
   invensible: 0
 --- !u!212 &212053841586771326
 SpriteRenderer:
