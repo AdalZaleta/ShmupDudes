@@ -14,7 +14,6 @@ namespace ShmupDudes
 		//TODO si se quiere hacer multiplayer local, puedes agregar aqui, que Joystick va a utilizar
 		public ControllerSide controllerSide;
 
-
 		void Awake()
 		{
 			Manager_Static.controllerManager = this;
