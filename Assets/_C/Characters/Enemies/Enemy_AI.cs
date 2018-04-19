@@ -7,7 +7,7 @@ public class Enemy_AI : MonoBehaviour {
 
 	GameObject Player;
 	NavMeshAgent agent;
-	GameObject Slime;
+	public GameObject Slime;
 	public int HP;
 	public int dmg;
 	public float enemy_offset;
@@ -30,7 +30,6 @@ public class Enemy_AI : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Player = GameObject.FindGameObjectWithTag ("Player");
-		Slime = GameObject.Find ("Slime");
 		agent = GetComponent<NavMeshAgent>();
 	}
 	

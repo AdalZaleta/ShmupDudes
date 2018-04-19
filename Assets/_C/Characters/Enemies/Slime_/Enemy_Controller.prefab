@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904435e8d0e0420439f02bfa210784ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Slime: {fileID: 1964710274754890}
   HP: 5
   dmg: 0
   enemy_offset: 0
