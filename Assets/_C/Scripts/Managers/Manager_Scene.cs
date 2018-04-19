@@ -8,6 +8,16 @@ namespace ShmupDudes{
 
 		public int currentScene;
 
+		public int killCount = 0;
+
+		void Update()
+		{
+			if (killCount >= 5)
+			{
+				SceneManager.LoadScene ("WinScreen");
+			}
+		}
+
 		void Awake()
 		{
 			Manager_Static.sceneManager = this;

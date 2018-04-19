@@ -14,5 +14,5 @@ MonoBehaviour:
   objectName: MocoMorado
   invensiblecd: 0
   HP: 100
-  Damage: 14
+  Damage: 2
   speed: 5

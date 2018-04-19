@@ -9,8 +9,6 @@ namespace ShmupDudes
 		void Awake()
 		{
 			Manager_Static.audioManager = this;
-			Debug.Log ("Hola");
-			Debug.Log ("aaaa", gameObject);
 		}
 
 		void OnDestroy()

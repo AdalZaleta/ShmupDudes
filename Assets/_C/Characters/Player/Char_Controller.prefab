@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 114717814877322926}
   - component: {fileID: 114049697795113562}
   - component: {fileID: 114393219884438868}
+  - component: {fileID: 114735945260896200}
   m_Layer: 0
   m_Name: pfb_Character
   m_TagString: Untagged
@@ -106,7 +107,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1062936377323714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalPosition: {x: -3.4841332, y: 1.039, z: 0.4641113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4286158205352294}
@@ -394,6 +395,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a799a41d17f9de04591d0a7adb7de468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114735945260896200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1546244929624782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bd93e5a636e2f4396ff920bedc4eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dirx: 0
+  dirz: 0
+  hpcoltroller: 0
 --- !u!114 &114784253054099642
 MonoBehaviour:
   m_ObjectHideFlags: 1

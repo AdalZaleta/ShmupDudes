@@ -11,6 +11,7 @@ TagManager:
   - bullet_P
   - bullet_R
   - bullet_M
+  - Aim
   layers:
   - Default
   - TransparentFX

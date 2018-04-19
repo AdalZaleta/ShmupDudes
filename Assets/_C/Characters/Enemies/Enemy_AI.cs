@@ -76,7 +76,11 @@ namespace ShmupDudes
 				anim.SetTrigger ("Dead");
 				Destroy (gameObject, 0.7f);
 			}
-				
+		}
+
+		void OnDestroy()
+		{
+			Manager_Static.sceneManager.killCount++;
 		}
 
 		IEnumerator Blink(int damage)

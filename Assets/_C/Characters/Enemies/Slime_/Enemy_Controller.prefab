@@ -132,7 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsCharacter: {fileID: 11400000, guid: e309c484adbaa4f48a9c3fdae919225f, type: 2}
+  anim: {fileID: 95025511231887138}
   currentHP: 0
+  currentSpeed: 0
   invensible: 0
 --- !u!114 &114034862315704796
 MonoBehaviour:

@@ -13,6 +13,12 @@ namespace ShmupDudes
 		public float currentSpeed;
 		public bool invensible;
 
+		void Update()
+		{
+			if (currentHP <= 0)
+				Destroy (gameObject);
+		}
+
 		void Awake()
 		{
 			currentHP = statsCharacter.HP;
