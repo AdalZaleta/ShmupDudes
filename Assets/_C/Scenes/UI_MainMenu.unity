@@ -1127,8 +1127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'OPTIONS
-
+  m_Text: 'CREDITS
 
 '
 --- !u!222 &673683408
@@ -1733,6 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene: 0
+  killCount: 0
 --- !u!114 &1909390929
 MonoBehaviour:
   m_ObjectHideFlags: 0

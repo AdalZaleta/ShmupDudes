@@ -24,5 +24,11 @@ namespace ShmupDudes
 			Manager_Static.audioManager.ApretarBoton (gameObject);
 			Application.Quit ();
 		}
+
+		public void Credits()
+		{
+			Manager_Static.audioManager.ApretarBoton (gameObject);
+			SceneManager.LoadScene ("Credits");
+		}
 	}
 }
