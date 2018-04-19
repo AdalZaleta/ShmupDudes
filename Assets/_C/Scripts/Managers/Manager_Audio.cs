@@ -2,15 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager_Audio : MonoBehaviour {
+namespace ShmupDudes
+{
+	public class Manager_Audio : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		void Awake()
+		{
+			Manager_Static.audioManager = this;
+			Debug.Log ("Hola");
+			Debug.Log ("aaaa", gameObject);
+		}
+
+		void OnDestroy()
+		{
+			Debug.Log ("Algo me matooooo");
+		}
+
+		public void Disparo1(GameObject _gameobj)
+		{
+			_gameobj.GetComponent<AudioSource> ().PlayOneShot (Resources.Load ("Sounds/FBX/shoot3") as AudioClip);
+		}
+
+		public void ResporducirBGMusic(int _num)
+		{
+			if (_num == 2) {
+				gameObject.GetComponent<AudioSource>().PlayOneShot(Resources.Load ("Sounds/OST/op3") as AudioClip);
+			}
+		}
 	}
 }

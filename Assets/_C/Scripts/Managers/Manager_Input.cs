@@ -39,9 +39,10 @@ namespace ShmupDudes
 			if (Manager_Static.appManager.currentState == AppState.main_menu) {
 				if (Input.GetAxis ("Vertical") > 0.5) {
 					Debug.Log ("Le estas dando para arriba");
+
 				}
 				if (Input.GetAxis ("Vertical") < -0.5) {
-					Debug.Log ("Le estas dando para arriba");
+					Debug.Log ("Le estas dando para abajo");
 				}
 			}
 		}

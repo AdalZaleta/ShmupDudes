@@ -25,5 +25,7 @@ namespace ShmupDudes
 		public static Manager_App appManager;
 		public static Instance_Character characterInstance;
 		public static Manager_Controller controllerManager;
+		public static Manager_Audio audioManager;
+		public static Manager_Scene sceneManager;
 	}
 }

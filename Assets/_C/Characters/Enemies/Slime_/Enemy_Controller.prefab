@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 195835408524531710}
   - component: {fileID: 114034862315704796}
   - component: {fileID: 114013927006259642}
-  - component: {fileID: 114660715132828838}
   m_Layer: 0
   m_Name: Enemy_Controller
   m_TagString: Enemy
@@ -151,20 +150,6 @@ MonoBehaviour:
   dmg: 0
   enemy_offset: 0
   anim: {fileID: 95025511231887138}
---- !u!114 &114660715132828838
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1671749954163366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44d4cb2034added4cbfa4d1b915072c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statsCharacter: {fileID: 11400000, guid: e309c484adbaa4f48a9c3fdae919225f, type: 2}
-  currentHP: 0
-  invensible: 0
 --- !u!114 &114898734901657540
 MonoBehaviour:
   m_ObjectHideFlags: 1

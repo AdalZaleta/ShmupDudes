@@ -14,5 +14,5 @@ MonoBehaviour:
   objectName: PlayerStats
   invensiblecd: 2
   HP: 14
-  Damage: 3
+  Damage: 2
   speed: 5

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Uniat.Pool
+namespace ShmupDudes
 {
 	public class Pool_Usage : MonoBehaviour {
 
@@ -52,6 +52,7 @@ namespace Uniat.Pool
 					PoolManager.Spawn (prefab, aim.transform.position, aim.transform.rotation);
 					StartCoroutine (Spark ());
 					StartCoroutine (Cooldown (downTime));
+					Manager_Static.audioManager.Disparo1 (gameObject);
 				}
 			}
 
