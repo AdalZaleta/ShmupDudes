@@ -30,7 +30,7 @@ namespace ShmupDudes
 		{
 			currentHP -= _damage;
 			if (currentHP <= 0) {
-				Debug.Log ("Morí");
+				Destroy (gameObject);
 			}
 		}
 

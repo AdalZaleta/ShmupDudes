@@ -10,6 +10,8 @@ namespace ShmupDudes
 
 		GameObject player;
 		public Sprite[] hpList;
+		public Sprite[] faceList;
+		public Image face;
 		public Image HPbar;
 		public Image ded;
 		public Text txtA;
@@ -28,7 +30,7 @@ namespace ShmupDudes
 			if (!player)
 				if (!isded)
 				{
-					HPbar.sprite = hpList [14];
+					HPbar.sprite = hpList [0];
 					StartCoroutine (death (0));
 					isded = true;
 				}
@@ -37,6 +39,13 @@ namespace ShmupDudes
 			{
 				hpspriteindex = player.GetComponent<Character_Stats> ().currentHP;
 				HPbar.sprite = hpList[hpspriteindex];
+
+				if (hpspriteindex >= 10)
+					face.sprite = faceList [0];
+				if (hpspriteindex < 10 && hpspriteindex >= 5)
+					face.sprite = faceList [1];
+				if (hpspriteindex < 5)
+					face.sprite = faceList [2];
 			}
 
 			if (isded && Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))

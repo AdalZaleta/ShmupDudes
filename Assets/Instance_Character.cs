@@ -29,7 +29,8 @@ namespace ShmupDudes
 
 		public void MovementRigi(Vector2 _direction)
 		{
-			myFather.velocity = new Vector3(_direction.x, 0, _direction.y) * statsCharacter.speed;
+			if (myFather)
+				myFather.velocity = new Vector3(_direction.x, 0, _direction.y) * statsCharacter.speed;
 		}
 
 		public void Rotation(Vector3 _rotation)
@@ -40,7 +41,8 @@ namespace ShmupDudes
 
 		public void RotationChild(Vector3 _rotation)
 		{
-			myChild.rotation = Quaternion.Euler (_rotation);
+			if (myChild)
+				myChild.rotation = Quaternion.Euler (_rotation);
 		}
 	}
 }
