@@ -29,5 +29,10 @@ namespace ShmupDudes
 				gameObject.GetComponent<AudioSource>().PlayOneShot(Resources.Load ("Sounds/OST/op3") as AudioClip);
 			}
 		}
+
+		public void ApretarBoton(GameObject __gameobj)
+		{
+			__gameobj.GetComponent<AudioSource>().PlayOneShot(Resources.Load("Sounds/FBX/Menu/Menu selection") as AudioClip);
+		}
 	}
 }

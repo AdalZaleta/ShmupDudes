@@ -4,25 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class UI_Manager : MonoBehaviour {
+namespace ShmupDudes
+{
+	public class UI_Manager : MonoBehaviour {
+			
+		// Update is called once per frame
+		void Update () {
+			if (Input.GetKeyDown (KeyCode.Escape))
+				QuitGame ();
+		}
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown (KeyCode.Escape))
-			QuitGame ();
-	}
-
-	public void StartGame()
-	{
-		SceneManager.LoadScene ("Enemy_test_A");
-	}
-	public void QuitGame()
-	{
-		Application.Quit ();
+		public void StartGame()
+		{
+			Manager_Static.audioManager.ApretarBoton (gameObject);
+			SceneManager.LoadScene ("Enemy_test_A");
+		}
+		public void QuitGame()
+		{
+			Manager_Static.audioManager.ApretarBoton (gameObject);
+			Application.Quit ();
+		}
 	}
 }

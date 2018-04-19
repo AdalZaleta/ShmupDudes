@@ -48,11 +48,20 @@ namespace ShmupDudes
 					face.sprite = faceList [2];
 			}
 
-			if (isded && Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
+			if (Input.GetKeyDown (KeyCode.JoystickButton6) && Input.GetKeyDown (KeyCode.JoystickButton7)) {
+				EditorSceneManager.LoadScene ("UI_MainMenu");
+			}
+
+			if(Input.GetKeyDown(KeyCode.JoystickButton1) && isded)
+			{
+				EditorSceneManager.LoadScene ("UI_MainMenu");
+			}
+
+			if (isded && Input.GetKeyDown(KeyCode.JoystickButton0) && !Input.GetKeyDown(KeyCode.Escape))
 			{
 				EditorSceneManager.LoadScene (EditorSceneManager.GetActiveScene().name);
 			}
-
+				
 			if (Input.GetKeyDown(KeyCode.Escape))
 			{
 				EditorSceneManager.LoadScene ("UI_MainMenu");
