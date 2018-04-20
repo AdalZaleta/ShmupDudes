@@ -27,7 +27,6 @@ namespace ShmupDudes
 
 		public void Credits()
 		{
-			Manager_Static.audioManager.ApretarBoton (gameObject);
 			SceneManager.LoadScene ("Credits");
 		}
 	}

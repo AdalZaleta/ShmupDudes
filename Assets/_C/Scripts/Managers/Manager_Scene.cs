@@ -16,6 +16,9 @@ namespace ShmupDudes{
 			{
 				SceneManager.LoadScene ("WinScreen");
 			}
+			if (Manager_Static.appManager.currentState == AppState.end_game) {
+				Invoke ("LoadMenu", 3);
+			}
 		}
 
 		void Awake()
@@ -31,6 +34,19 @@ namespace ShmupDudes{
 				gameObject.GetComponent<AudioSource>().clip  = Resources.Load ("Sounds/OST/op3") as AudioClip;
 				gameObject.GetComponent<AudioSource> ().Play ();
 			}
+			if (currentScene == 2) {
+				gameObject.GetComponent<AudioSource>().clip  = Resources.Load ("Sounds/OST/Tree") as AudioClip;
+				gameObject.GetComponent<AudioSource> ().Play ();
+			}
+			if (currentScene == 3) {
+				gameObject.GetComponent<AudioSource>().clip  = Resources.Load ("Sounds/OST/op1") as AudioClip;
+				gameObject.GetComponent<AudioSource> ().Play ();
+			}
+		}
+
+		void LoadMenu()
+		{
+			SceneManager.LoadScene ("Credits");
 		}
 	}
 }

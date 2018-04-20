@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 namespace ShmupDudes
@@ -43,6 +44,11 @@ namespace ShmupDudes
 				}
 				if (Input.GetAxis ("Vertical") < -0.5) {
 					Debug.Log ("Le estas dando para abajo");
+				}
+			}
+			if (Manager_Static.appManager.currentState == AppState.end_game) {
+				if (Input.anyKeyDown) {
+					SceneManager.LoadScene ("UI_Main_Menu");
 				}
 			}
 		}
