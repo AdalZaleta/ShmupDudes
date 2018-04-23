@@ -10,13 +10,17 @@ namespace ShmupDudes{
 
 		public int killCount = 0;
 
+		bool credits = false;
+
 		void Update()
 		{
 			if (killCount >= 5)
 			{
+				killCount = 0;
 				SceneManager.LoadScene ("WinScreen");
 			}
-			if (Manager_Static.appManager.currentState == AppState.end_game) {
+			if (Manager_Static.appManager.currentState == AppState.end_game) 
+			{
 				Invoke ("LoadMenu", 3);
 			}
 		}

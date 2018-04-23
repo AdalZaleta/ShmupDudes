@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 namespace ShmupDudes
 {
@@ -49,22 +49,22 @@ namespace ShmupDudes
 			}
 
 			if (Input.GetKeyDown (KeyCode.JoystickButton6) && Input.GetKeyDown (KeyCode.JoystickButton7)) {
-				EditorSceneManager.LoadScene ("UI_MainMenu");
+				SceneManager.LoadScene ("UI_MainMenu");
 			}
 
 			if(Input.GetKeyDown(KeyCode.JoystickButton1) && isded)
 			{
-				EditorSceneManager.LoadScene ("UI_MainMenu");
+				SceneManager.LoadScene ("UI_MainMenu");
 			}
 
 			if (isded && Input.GetKeyDown(KeyCode.JoystickButton0) && !Input.GetKeyDown(KeyCode.Escape))
 			{
-				EditorSceneManager.LoadScene (EditorSceneManager.GetActiveScene().name);
+				SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 			}
 				
 			if (Input.GetKeyDown(KeyCode.Escape))
 			{
-				EditorSceneManager.LoadScene ("UI_MainMenu");
+				SceneManager.LoadScene ("UI_MainMenu");
 			}
 		}
 

@@ -2581,6 +2581,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212053841586771326, guid: 675e6ef8bc7690f4f9c819ae5ec6b89f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d7eb43b80bebf24eacc4b8d398ba61a,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 675e6ef8bc7690f4f9c819ae5ec6b89f, type: 2}
   m_IsPrefabParent: 0
@@ -4316,7 +4322,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7dc015b922e91d748b6e98a6af5a5415, type: 2}
+  - {fileID: 2100000, guid: 89f4e11b721c7ec498f9f5f5031bcca1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

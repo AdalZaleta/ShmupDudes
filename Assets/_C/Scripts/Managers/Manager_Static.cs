@@ -10,7 +10,8 @@ namespace ShmupDudes
 		main_menu,
 		gameplay,
 		pause_menu,
-		end_game
+		end_game,
+		credits
 	}
 
 	public enum ControllerSide

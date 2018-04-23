@@ -17,7 +17,7 @@ namespace ShmupDudes
 		public void StartGame()
 		{
 			Manager_Static.audioManager.ApretarBoton (gameObject);
-			SceneManager.LoadScene ("Enemy_test_A");
+			SceneManager.LoadScene ("Level_1");
 		}
 		public void QuitGame()
 		{
